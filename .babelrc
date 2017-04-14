@@ -1,0 +1,16 @@
+{
+  "presets": [ "env" ],
+  "env": {
+    "server": {
+      "plugins": [
+        "dynamic-import-node",
+        "transform-runtime"
+      ]
+    },
+    "client": {
+      "plugins": [
+        "syntax-dynamic-import"
+      ]
+    }
+  }
+}
