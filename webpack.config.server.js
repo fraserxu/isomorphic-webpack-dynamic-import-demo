@@ -1,4 +1,5 @@
 module.exports = {
+  target: 'node',
   entry: './server.js',
   output: {
     filename: 'dist.server.js',

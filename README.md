@@ -10,7 +10,6 @@ $ yarn install
 
 * Server(Node)
   - babel-plugin-dynamic-import-node
-  - babel-runtime(babel-plugin-transform-runtime when in dev mode)
 * Client(Browser)
   - babel-plugin-syntax-dynamic-import
 
@@ -22,8 +21,7 @@ $ yarn install
   "env": {
     "server": {
       "plugins": [
-        "dynamic-import-node",
-        "transform-runtime"
+        "dynamic-import-node"
       ]
     },
     "client": {
