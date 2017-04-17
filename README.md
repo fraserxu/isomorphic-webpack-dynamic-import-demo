@@ -6,7 +6,15 @@ isomorphic webpack dynamic import demo
 $ yarn install
 ```
 
-#### Example `.babelrc`
+#### Plugins
+
+* Server(Node)
+  - babel-plugin-dynamic-import-node
+  - babel-runtime(babel-plugin-transform-runtime when in dev mode)
+* Client(Browser)
+  - babel-plugin-syntax-dynamic-import
+
+#### Example `.babelrc` with `BABEL_ENV`
 
 ```json
 {
@@ -31,11 +39,11 @@ $ yarn install
 #### Build client
 
 ```sh
-$ yarn run build:client
+$ BABEL_ENV=client webpack --config webpack.config.client.js
 ```
 
 #### Build server
 
 ```sh
-$ yarn run build:server
+$ BABEL_ENV=server webpack --config webpack.config.server.js
 ```
